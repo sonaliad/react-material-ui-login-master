@@ -39,16 +39,6 @@ const UserProfile = () => {
     getProducts
   );
   console.log(data);
-
-  // useEffect(() => {
-  //   const token = localStorage.getItem('token')
-
-  //   const getProducts = async (): Promise<CartItemType[]> =>
-  //     await (await fetch(`https://qo7vrra66k.execute-api.eu-west-1.amazonaws.com/choco/products?token=${token}`)).json();
-  //     getProducts().catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, [token] );
   
   const getTotalItems = (items: CartItemType[]) =>
     items.reduce((ack: number, item) => ack + item.amount, 0);

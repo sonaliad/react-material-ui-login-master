@@ -3,11 +3,8 @@
 ## Description
 
 Login app is a simple login form built using React, Typescript and React Material UI.<br />
-A perfect example to showcase the use of `useReducer` and `useEffect` hooks. 
 
-![Login Form](/public/screenshot.png)
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Login Form](public/screenshot.png)
 
 ## Available Scripts
 
@@ -20,4 +17,16 @@ Installs the dependencies defined in the `package.json` file
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Technologies involved / approach
+- Login/Cart functionality is using Typescript, Material UI, Styled Components and React-Query.
+- React-Query hooks is used for fetching the data from the API.
+- Responsive web design 
+- Styled Components for cleaner code.
+
+## Further improvements
+
+- Increase test coverage (>80%)
+- Include Web accessibility standards
+- Improve the component structure.
 
