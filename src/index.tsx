@@ -12,7 +12,7 @@ const client = new QueryClient();
 ReactDOM.render(
     <AuthContextProvider>
       <QueryClientProvider client={client}>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
         <App />
         </BrowserRouter>
       </QueryClientProvider>
