@@ -28,7 +28,7 @@ const getToken = () => {
 }
 
 const getProducts = async (): Promise<CartItemType[]> =>
-  await (await fetch(`https://qo7vrra66k.execute-api.eu-west-1.amazonaws.com/choco/products?token=${getToken()}`)).json();
+  await (await fetch(`https://powerful-plateau-38267.herokuapp.com/https://qo7vrra66k.execute-api.eu-west-1.amazonaws.com/choco/products?token=${getToken()}`)).json();
 
  
 const UserProfile = () => {

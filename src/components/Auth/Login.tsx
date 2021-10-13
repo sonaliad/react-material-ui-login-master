@@ -4,7 +4,7 @@ import AuthContext from '../../store/auth.context';
 // import classes from './Login.module.css';
 import { Wrapper } from './Login.styles';
 
-const API_URL = "https://qo7vrra66k.execute-api.eu-west-1.amazonaws.com/choco/";
+const API_URL = "https://powerful-plateau-38267.herokuapp.com/https://qo7vrra66k.execute-api.eu-west-1.amazonaws.com/choco/";
 
 const Login = () => {
   // const history = useHistory();
@@ -22,12 +22,13 @@ const Login = () => {
 
     const enteredEmail = emailInputRef.current?.value;
     const enteredPassword = passwordInputRef.current?.value;
-
+    var data = {
+      "email":enteredEmail,
+      "password":enteredPassword
+    }
+    
     return axios
-      .post(API_URL + "login", {
-        "email":enteredEmail,
-        "password":enteredPassword
-      })
+      .post(API_URL + "login",data)
       .then(response => {
         console.log(response);
         if (response.data.token) {
